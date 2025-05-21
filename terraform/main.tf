@@ -2,12 +2,6 @@
 # Provider
 ###############################################################################
 terraform {
-  backend "s3" {
-    bucket = "XXXXXXXXXXXX-bucket-state-file"
-    key    = "terraform.eks.tfstate"
-    region = "us-east-1"
-  }
-
   required_providers {
     aws = {
       source  = "hashicorp/aws"
